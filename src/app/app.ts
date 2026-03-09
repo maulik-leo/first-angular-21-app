@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { Login } from './login/login';
+import { Custom } from './custom/cutom';
 
 @Component({
   selector: 'app-root',
-  imports: [Login],
+  imports: [Login, Custom],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
