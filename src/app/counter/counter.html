@@ -1,0 +1,9 @@
+<fieldset style="text-align: center">
+  <legend><h1 style="text-align: center">My Counter</h1></legend>
+  <h2 class="count">{{ count }}</h2>
+  <div>
+    <button (click)="manageCounter('minus')" class="btn bg-red">Decrease</button>
+    <button (click)="manageCounter('reset')" class="btn">Reset</button>
+    <button (click)="manageCounter('plus')" class="btn bg-green">Increase</button>
+  </div>
+</fieldset>
