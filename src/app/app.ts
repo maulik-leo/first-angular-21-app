@@ -9,6 +9,9 @@ import { Custom } from './custom/cutom';
   styleUrl: './app.css',
 })
 export class App {
+  handleClick() {
+    console.log("Button Clicked");
+  }
   protected readonly title = signal('first-angular-21-app');
   version = 21;
 }
