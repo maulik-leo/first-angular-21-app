@@ -1,0 +1,19 @@
+<h3>
+  Event Component - Current Event is <span>{{ currentEvent }}</span>
+</h3>
+<button (click)="performEvent($event)" (dblclick)="performEvent($event)">Click me</button>
+<input
+  type="text"
+  placeholder="Keyboard events..."
+  (focus)="performEvent($event)"
+  (blur)="performEvent($event)"
+  (input)="performEvent($event)"
+/>
+<div
+  (click)="performEvent($event)"
+  (dblclick)="performEvent($event)"
+  (mouseenter)="performEvent($event)"
+  (mouseleave)="performEvent($event)"
+>
+  Perform Mouse Events Here..
+</div>
