@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+  border-bottom: 1px solid black;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+nav ul li {
+  align-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.active {
+  background-color: #e0ff59;
+  padding: 5px;
+}

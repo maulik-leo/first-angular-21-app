@@ -1,17 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { Login } from './login/login';
-import { Custom } from './custom/cutom';
-import { Counter } from './counter/counter';
-import { MyEvent } from './my-event/my-event';
-import { ToDoList } from './to-do-list/to-do-list';
+import { Component } from '@angular/core';
+import { Header } from './header/header';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Custom, Counter, MyEvent, ToDoList],
+  imports: [Header, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('first-angular-21-app');
-  version = 21;
-}
+export class App {}
